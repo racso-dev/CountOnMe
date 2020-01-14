@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="oGi-dC-2FS" customClass="OperatorsView" customModule="CountOnMe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="210" height="63"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Jxp-qe-J9D" customClass="OperatorsView" customModule="CountOnMe" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="210" height="63"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eea-DS-udy">
+                            <rect key="frame" x="0.0" y="0.0" width="42" height="63"/>
+                            <color key="backgroundColor" red="0.06410206185680449" green="0.11106256669348155" blue="0.5151126385" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                            <state key="normal" title="÷">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="tappedOpertorButton:" destination="oGi-dC-2FS" eventType="touchUpInside" id="YCX-Pd-gun"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ugr-g8-7xx">
+                            <rect key="frame" x="42" y="0.0" width="42" height="63"/>
+                            <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                            <state key="normal" title="x">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="tappedOpertorButton:" destination="oGi-dC-2FS" eventType="touchUpInside" id="U2D-88-85O"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rO1-hE-mrh">
+                            <rect key="frame" x="84" y="0.0" width="42" height="63"/>
+                            <color key="backgroundColor" red="0.46913260919999999" green="0.7149516575" blue="0.62407517239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                            <state key="normal" title="+">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="tappedOpertorButton:" destination="oGi-dC-2FS" eventType="touchUpInside" id="BzG-Bk-6p2"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZML-27-f0p">
+                            <rect key="frame" x="126" y="0.0" width="42" height="63"/>
+                            <color key="backgroundColor" red="0.87294975829999999" green="0.37112226879999999" blue="0.32504552809999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                            <state key="normal" title="-">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="tappedOpertorButton:" destination="oGi-dC-2FS" eventType="touchUpInside" id="M1j-gZ-7lG"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZvQ-pP-mFf">
+                            <rect key="frame" x="168" y="0.0" width="42" height="63"/>
+                            <color key="backgroundColor" red="0.94643473759999996" green="0.64318747399999998" blue="0.12665354140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <accessibility key="accessibilityConfiguration" identifier="equal"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                            <state key="normal" title="=">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="tappedOpertorButton:" destination="oGi-dC-2FS" eventType="touchUpInside" id="KI4-M2-re0"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="0qx-na-RQf"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <accessibility key="accessibilityConfiguration" identifier="nibName">
+                <bool key="isElement" value="YES"/>
+            </accessibility>
+            <constraints>
+                <constraint firstItem="Jxp-qe-J9D" firstAttribute="top" secondItem="oGi-dC-2FS" secondAttribute="top" id="3jy-Pf-poX"/>
+                <constraint firstItem="Jxp-qe-J9D" firstAttribute="leading" secondItem="oK5-wN-Z6c" secondAttribute="leading" id="REC-tO-r2W"/>
+                <constraint firstItem="oK5-wN-Z6c" firstAttribute="trailing" secondItem="Jxp-qe-J9D" secondAttribute="trailing" id="thh-Sm-bkV"/>
+                <constraint firstItem="Jxp-qe-J9D" firstAttribute="bottom" secondItem="oK5-wN-Z6c" secondAttribute="bottom" id="zX6-aI-bS3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="oK5-wN-Z6c"/>
+            <point key="canvasLocation" x="62" y="395"/>
+        </view>
+    </objects>
+</document>

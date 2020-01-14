@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ebw-g9-82o">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="1bZ-bv-3vH">
+            <objects>
+                <viewController id="ebw-g9-82o" customClass="ViewController" customModule="CountOnMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sey-wQ-ESt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gkT-fU-dqf" customClass="WrapperDisplayView" customModule="CountOnMe" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="250"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="IMF-hA-u0O"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UBI-Od-xqg" customClass="WrapperComposeView" customModule="CountOnMe" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="294" width="414" height="468"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YQi-t4-v0Y" customClass="WrapperOperatorsView" customModule="CountOnMe" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="772" width="414" height="90"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="gDu-dz-S4J"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="UBI-Od-xqg" firstAttribute="width" secondItem="YQi-t4-v0Y" secondAttribute="width" id="2DM-qe-XX0"/>
+                            <constraint firstItem="UBI-Od-xqg" firstAttribute="leading" secondItem="Kb1-H4-iSF" secondAttribute="leading" id="51S-Re-NVM"/>
+                            <constraint firstItem="gkT-fU-dqf" firstAttribute="leading" secondItem="Kb1-H4-iSF" secondAttribute="leading" id="I6w-iB-bM2"/>
+                            <constraint firstItem="Kb1-H4-iSF" firstAttribute="trailing" secondItem="UBI-Od-xqg" secondAttribute="trailing" id="MV0-Zj-WUt"/>
+                            <constraint firstItem="UBI-Od-xqg" firstAttribute="width" secondItem="gkT-fU-dqf" secondAttribute="width" id="PQe-Qi-FPv"/>
+                            <constraint firstItem="UBI-Od-xqg" firstAttribute="top" secondItem="gkT-fU-dqf" secondAttribute="bottom" id="S1r-kX-fYY"/>
+                            <constraint firstItem="YQi-t4-v0Y" firstAttribute="top" secondItem="UBI-Od-xqg" secondAttribute="bottom" constant="10" id="efz-8S-eUD"/>
+                            <constraint firstItem="Kb1-H4-iSF" firstAttribute="trailing" secondItem="gkT-fU-dqf" secondAttribute="trailing" id="eib-L7-Wqd"/>
+                            <constraint firstItem="YQi-t4-v0Y" firstAttribute="bottom" secondItem="Kb1-H4-iSF" secondAttribute="bottom" id="f0x-Ig-mEt"/>
+                            <constraint firstItem="Kb1-H4-iSF" firstAttribute="trailing" secondItem="YQi-t4-v0Y" secondAttribute="trailing" id="iC0-1c-YBq"/>
+                            <constraint firstItem="gkT-fU-dqf" firstAttribute="top" secondItem="Kb1-H4-iSF" secondAttribute="top" id="maa-og-q7u"/>
+                            <constraint firstItem="YQi-t4-v0Y" firstAttribute="leading" secondItem="Kb1-H4-iSF" secondAttribute="leading" id="sDA-8v-MOO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kb1-H4-iSF"/>
+                    </view>
+                    <connections>
+                        <outlet property="composeView" destination="UBI-Od-xqg" id="8vd-L7-zrA"/>
+                        <outlet property="displayView" destination="gkT-fU-dqf" id="02g-6U-hNG"/>
+                        <outlet property="operatorsView" destination="YQi-t4-v0Y" id="kTB-XB-lnA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jpF-1n-0Hv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-213.04347826086959" y="2.6785714285714284"/>
+        </scene>
+    </scenes>
+</document>
