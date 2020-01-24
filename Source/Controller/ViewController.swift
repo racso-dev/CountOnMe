@@ -41,7 +41,7 @@ extension ViewController: ComposeViewDelegate {
 
     /// Called whenever a number button is tapped from the composeView
     func tappedNumberButton(_ sender: UIButton) {
-        guard let numberText = sender.title(for: .normal) else { return }
+        guard let textButton = sender.title(for: .normal) else { return }
 
         // Trick to not display a chain of zero
         if displayView.contentView.textLabel.text! == "0" {
@@ -51,8 +51,12 @@ extension ViewController: ComposeViewDelegate {
         if getExpression.expressionHaveResult {
             displayView.contentView.textLabel.text = ""
         }
-        self.displayView.contentView.concatDisplayedText(with: numberText)
-        self.getExpression.setText(text: displayView.contentView.textLabel.text!)
+        if textButton == "AC" {
+            displayView.contentView.textLabel.text = "0"
+        } else {
+            self.displayView.contentView.concatDisplayedText(with: textButton)
+            self.getExpression.setText(text: displayView.contentView.textLabel.text!)
+        }
     }
 
 }

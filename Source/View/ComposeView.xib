@@ -158,17 +158,22 @@
                                         <action selector="tappedNumberButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="elQ-2x-6wa"/>
                                     </connections>
                                 </button>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kw-Y8-d4Y">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qe-gt-A7E">
                                     <rect key="frame" x="0.0" y="692.5" width="227" height="220.5"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
+                                    <color key="backgroundColor" red="0.60392156860000001" green="0.57647058819999997" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                    <state key="normal" title="AC">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="tappedNumberButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="Bjp-RO-cN1"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <constraints>
+                                <constraint firstItem="5qe-gt-A7E" firstAttribute="height" secondItem="kzp-50-OzI" secondAttribute="height" id="Egf-B2-FWQ"/>
                                 <constraint firstItem="kzp-50-OzI" firstAttribute="height" secondItem="JIZ-px-1qc" secondAttribute="height" id="NlU-Uk-NJo"/>
                                 <constraint firstItem="kzp-50-OzI" firstAttribute="height" secondItem="QpU-Fs-wnb" secondAttribute="height" id="WzQ-6R-tLO"/>
-                                <constraint firstItem="0kw-Y8-d4Y" firstAttribute="height" secondItem="kzp-50-OzI" secondAttribute="height" id="vDD-ys-VOU"/>
                             </constraints>
                             <viewLayoutGuide key="safeArea" id="Aav-rP-f1k"/>
                         </stackView>

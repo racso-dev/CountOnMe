@@ -47,10 +47,20 @@ class BrainCalculator {
         return false
     }
 
+    private func formatExpressionAsDouble(expression: String) -> String {
+        let strings = expression.split(separator: " ").map { (element) -> String in
+            guard let nbInt = Int(element) else { return String(element) }
+            let double = Double(nbInt)
+            return String(double)
+        }
+        let new = strings.joined()
+        return new
+    }
+
     /// Formating a given expression to a readable expression for NSExpression
     private func formatExpression(expression: String) -> String? {
 
-        var newExpression = expression.replacingOccurrences(of: " ", with: "")
+        var newExpression = formatExpressionAsDouble(expression: expression)
         newExpression = newExpression.replacingOccurrences(of: "÷", with: "/")
         newExpression = newExpression.replacingOccurrences(of: "x", with: "*")
         newExpression = removePlusOperator(expression: newExpression)
